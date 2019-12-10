@@ -11,10 +11,7 @@ const HomeHeader: React.FC = () => {
     if (index !== 0) {
       setBarOffsetX(index * 107)
     } else {
-      // pause for 300ms
-      setTimeout(() => {
-        setBarOffsetX(0);
-      }, 300);
+      setBarOffsetX(0);
     }
   }
 
@@ -24,6 +21,7 @@ const HomeHeader: React.FC = () => {
         {headerItems.map((item, index) => {
           return (
             <li
+              key={item}
               onMouseOver={() => {changeBarOffset(index)}}
               onMouseLeave={() => {changeBarOffset(0)}}
             >

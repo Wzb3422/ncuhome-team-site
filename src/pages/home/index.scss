@@ -1,12 +1,11 @@
 @media (min-width: 768px) {
   .home-content-limit {
-    height: 20%;
+    height: 100%;
     width: 100%;
     box-sizing: border-box;
     padding: 36px 66px;
-    position: relative;
-    // top: 36px;
-    // left: 66px;
+    position: fixed;
+    overflow: hidden;
 
     .scroll-content {
       height: 100%;
