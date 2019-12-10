@@ -1,18 +1,22 @@
-# Kctus-blog
+# Ncuhome-team-site
 
-:wheel_of_dharma: This repo has been abandoned.
+:tada: 全新的家园工作室主站
 
-:memo: A blog theme, inspire by Cactus theme, rebuilt and bettered by React.
+## 技术栈
 
-## Requirements
++ React (with Hooks) & react-router-dom
++ Sass
++ webpack
++ TypeScript
 
-### Pages
+## 设计图稿
 
-+ Homepage
-+ About Me
-+ Posts
-+ Projects
++ [Sketch Cloud - 主站](https://sketch.cloud/s/xd5j5)
 
-### Technical
+## 我在开发过程中的思考
 
-+ how to render md files?
++ To be filled.
+
+## License
+
+MIT License @Wzb3422
