@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "PFSC";
+  src: url("/assets/fonts/PingFangSC-Medium.woff2") format("woff2"),
+       url("/assets/fonts/PingFang-SC.woff") format("woff");
+}
+
+body {
+  font-family: "PFSC";
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
