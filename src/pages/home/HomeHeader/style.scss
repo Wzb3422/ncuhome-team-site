@@ -1,0 +1,50 @@
+@import "../../../styles/variables.scss";
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+  .home-header {
+    height: 56px;
+    width: auto;
+    position: relative;
+    ul {
+      height: 100%;
+      width: auto;
+      display: flex;
+      align-items: center;
+
+      li {
+        width: 46px;
+        padding: 0 4px;
+        text-align: center;
+        margin-right: 53px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      li:last-child {
+        width: 90px;
+        color: #fff;
+        background-color: $primary-button-color;
+        padding: 7px 12px;
+        border-radius: 20px;
+        margin: 0;
+        transition: all .6s;
+      }
+    }
+
+    .home-header-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      width: 54px;
+      background-color: $main-black;
+      border-radius: 2.5px;
+      transition: all 0.3s ease-out;
+    }
+  }
+}
+
