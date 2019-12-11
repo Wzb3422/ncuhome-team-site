@@ -3,13 +3,13 @@
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    padding: 36px 66px;
+    padding: 28px 0 0 66px;
     position: fixed;
     overflow: hidden;
 
     .scroll-content {
       height: 100%;
-      width: 300%;
+      width: 9999px;
       display: flex;
       position: relative;
       top: -56px;
@@ -18,12 +18,7 @@
       .scroll-content-item {
         height: 100%;
         width: 100%;
-        &:nth-child(2n) {
-          background: grey;
-        }
-        &:nth-child(2n-1) {
-          background-color: lightgrey;
-        }
+        background: grey;
       }
     }
   }
