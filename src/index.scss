@@ -4,9 +4,14 @@
        url("/assets/fonts/PingFang-SC.woff") format("woff");
 }
 
+@font-face {
+  font-family: "MesloLGS";
+  src: url("/assets/fonts/MesloLGS-Regular.ttf");
+}
+
 body {
-  height: 500%;
-  font-family: "PFSC";
+  height: 9999px;
+  font-family: "PFSC", "MesloLGS", "san-serif";
 }
 
 #root {
