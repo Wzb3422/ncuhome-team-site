@@ -9,10 +9,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // HMR enabled
 if(module.hot) {
   module.hot.accept("./App", () => {
-      const App = require("./App").default;
-      ReactDOM.render(
-          <App />,
-          document.getElementById('root')
-      );
+    const App = require("./App").default;
+    ReactDOM.render(
+      <App />,
+      document.getElementById('root')
+    );
   });
 }
