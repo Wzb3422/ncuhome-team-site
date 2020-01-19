@@ -4,22 +4,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: 28px 0 0 66px;
-    position: fixed;
     overflow: hidden;
-
-    .scroll-content {
-      height: 100%;
-      width: 9999px;
-      display: flex;
-      position: relative;
-      top: -56px;
-      z-index: -1;
-
-      .scroll-content-item {
-        height: 100%;
-        width: 100%;
-        background: grey;
-      }
-    }
   }
 }
