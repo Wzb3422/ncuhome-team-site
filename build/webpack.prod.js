@@ -6,5 +6,10 @@ module.exports = merge(commonConfig, {
   mode: 'production',
   plugins: [
     new CleanWebpackPlugin()
-  ]
+  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  }
 });
