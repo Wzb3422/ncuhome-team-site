@@ -1,15 +1,16 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import './index.scss';
-import HorizontalScroll from '@src/components/HorizontalScroll';
+import HorizontalScroll from '@src/pages/home/components/HorizontalScroll';
 import { useMedia } from 'react-use';
 
 const Ncuhome = lazy(() => import('./Ncuhome'));
+const Products = lazy(() => import('./Products'));
 
 const Pages: React.FC = () => {
   return (
     <>
       <Ncuhome />
-      <Ncuhome />
+      <Products />
     </>
   )
 } 
