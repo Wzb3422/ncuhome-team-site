@@ -1,20 +1,34 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import './index.scss';
-import HorizontalScroll from 'Src/components/HorizontalScroll';
+import HorizontalScroll from '@src/components/HorizontalScroll';
+import { useMedia } from 'react-use';
 
 const Ncuhome = lazy(() => import('./Ncuhome'));
-const Products = lazy(() => import('./Products'));
+
+const Pages: React.FC = () => {
+  return (
+    <>
+      <Ncuhome />
+      <Ncuhome />
+    </>
+  )
+} 
 
 const Home = () => {
+
+  const isWide = useMedia('(min-width: 768px)')
 
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <HorizontalScroll>
-          <Ncuhome />
-          <Ncuhome />
-          {/* <Products /> */}
-        </HorizontalScroll>
+        {
+          isWide ? (
+            <HorizontalScroll>
+              <Pages />
+            </HorizontalScroll>
+          ) : (<Pages />)
+        }
+        
       </Suspense>
     </>
   )
