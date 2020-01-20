@@ -11,7 +11,6 @@ const HorizontalScroll: React.FC = ({ children }) => {
     })
   }, [])
 
-
   return (
     <div className='hs-content-limit' style={{transform: `translateY(${offset}px)`}}>
       <div className='hs-horizontal-content' style={{transform: `translateX(-${offset}px)`}}>
