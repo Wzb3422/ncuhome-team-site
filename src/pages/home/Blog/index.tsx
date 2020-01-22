@@ -7,6 +7,7 @@ const Blog: React.FC = () => {
     <div className="home-blog-wrapper">
       <div className="home-blog-left">
         <div className="home-blog-l-bg">
+          <div className="home-blog-bg"></div>
           <img src="/assets/img/home-blog.png" alt="blog" />
         </div>
       </div>
