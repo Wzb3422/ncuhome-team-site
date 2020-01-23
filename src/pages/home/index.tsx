@@ -6,6 +6,7 @@ import { useMedia } from 'react-use';
 const Ncuhome = lazy(() => import('./Ncuhome'));
 const Products = lazy(() => import('./Products'));
 const Blog = lazy(() => import('./Blog'));
+const TeamWork= lazy(() => import('./TeamWork'));
 
 const Pages: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Pages: React.FC = () => {
       <Ncuhome />
       <Products />
       <Blog />
+      <TeamWork />
     </>
   )
 } 
