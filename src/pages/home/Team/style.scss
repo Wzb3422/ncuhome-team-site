@@ -54,37 +54,37 @@
 
 @media (max-width: 767px) {
   .home-team-wrapper {
-    height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    height: 550px;
     .home-team-l-bg {
-      margin-top: 40px;
+      position: relative;
+      top: 260px;
+      height: 300px;
       .home-team-text {
-        height: 100%;
-        width: 100%;
+        height: 300px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 320px;
         letter-spacing: 3px;
-        & > p {
+        & p {
           margin-bottom: 16px;
           text-align: center;
           font-size: 16px;
           color: rgba(0, 0, 0, 0.85);
         }
-        & > p:last-child {
+        & p:last-child {
           margin-bottom: 40px;
+        }
+        & > img {
+          display: none;
         }
       }
     }
+
     & img {
       width: 100%;
       position: relative;
-      top: -520px;
+      top: -460px;
     }
     .home-title {
       font-size: 52px;
@@ -96,7 +96,7 @@
         margin-bottom: 42px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         & > p {
           margin-bottom: 16px;
           font-size: 16px;

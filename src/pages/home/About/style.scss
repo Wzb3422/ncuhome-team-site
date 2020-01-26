@@ -58,45 +58,13 @@
       display: flex;
       padding-left: 10%;
       flex-flow: column wrap;
-      .iconfont {
-        font-family: "iconfont" !important;
-        font-size: 20px;
-        font-style: normal;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      .wechat:before {
-        @extend .iconfont;
-        content: "\e68d  ";
-      }
-      .zhihu:before {
-        @extend .iconfont;
-        content: "\e600  ";
-      }
-      .bili:before {
-        @extend .iconfont;
-        content: "\e603  ";
-      }
-      .address:before {
-        @extend .iconfont;
-        content: "\e61a  ";
-        font-size: 26px;
-      }
-      .mail:before {
-        @extend .iconfont;
-        content: "\e644  ";
-        font-size: 26px;
-      }
-      .tel:before {
-        @extend .iconfont;
-        content: "\e614  ";
-        font-size: 26px;
-      }
       a {
         color: rgba(0, 0, 0, 0.7);
         text-decoration: none;
         line-height: 1.8em;
         font-size: 16px;
+        position: relative;
+        left: 4px;
       }
       a:hover:not(.address) {
         color: rgb(0, 0, 0);
@@ -115,16 +83,171 @@
         }
       }
     }
+    .iconfont {
+      font-family: "iconfont" !important;
+      font-size: 20px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      left: -4px;
+    }
+    .iconreset {
+      font-size: 26px;
+      top: 4px;
+    }
+    .wechat:before {
+      @extend .iconfont;
+      content: "\e68d  ";
+    }
+    .zhihu:before {
+      @extend .iconfont;
+      content: "\e600  ";
+    }
+    .bili:before {
+      @extend .iconfont;
+      content: "\e603  ";
+    }
+    .address:before {
+      @extend .iconfont, .iconreset;
+      content: "\e61a  ";
+    }
+    .mail:before {
+      @extend .iconfont, .iconreset;
+      content: "\e644  ";
+    }
+    .tel:before {
+      @extend .iconfont, .iconreset;
+      content: "\e614  ";
+    }
   }
 }
 
 @media (max-width: 767px) {
   .home-about-wrapper {
-    height: 100%;
+    height: 580px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f5f5f5;
+    .home-about-content {
+      width: 100%;
+      height: 78%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      & > img:first-child {
+        display: none;
+      }
+      .home-about-desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 140px;
+        & .bold-btn {
+          background-color: #b7ecb2;
+        }
+        .home-about-text1 {
+          font-size: 36px;
+          letter-spacing: 8px;
+        }
+        .home-about-title {
+          font-size: 26px;
+          letter-spacing: 8px;
+          margin-bottom: 16px;
+        }
+        .home-about-text2 {
+          font-size: 12px;
+          // letter-spacing: 3px;
+          margin-bottom: 16px;
+          color: rgba(0, 0, 0, 0.45);
+          margin-bottom: 30px;
+        }
+        & > img {
+          margin: 10px 0;
+          width: 300px;
+        }
+        & > img:last-child {
+          margin-top: 120px;
+          width: 85%;
+        }
+      }
+    }
+    .home-about-bottom {
+      height: 22%;
+      width: 100%;
+      display: flex;
+      padding-left: 8%;
+      flex-flow: column wrap;
+      a {
+        color: rgba(0, 0, 0, 0.7);
+        text-decoration: none;
+        font-size: 10px;
+        height: 1.6em;
+        line-height: 1.6em;
+        text-align: baseline;
+        position: relative;
+        left: 3px;
+      }
+      a:hover:not(.address) {
+        color: rgb(0, 0, 0);
+      }
+      & p {
+        height: 36px;
+        line-height: 36px;
+        font-size: 13px;
+        display: inline-block;
+        color: rbga(0, 0, 0, 0.85);
+      }
+      & > ul {
+        display: flex;
+        & > li {
+          width: 40%;
+          li:not(:first-child) {
+            height: 24px;
+            line-height: 24px;
+          }
+        }
+      }
+      .iconfont_min {
+        font-family: "iconfont" !important;
+        font-size: 14px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        left: -3px;
+      }
+      .wechat:before {
+        @extend .iconfont_min;
+        content: "\e68d";
+      }
+      .zhihu:before {
+        @extend .iconfont_min;
+        content: "\e600";
+      }
+      .bili:before {
+        @extend .iconfont_min;
+        content: "\e603";
+      }
+      .iconreset_min:before {
+        font-size: 18px;
+        position: relative;
+        top: 3px;
+      }
+      .address:before {
+        @extend .iconfont_min, .iconreset_min;
+        content: "\e61a";
+      }
+      .mail:before {
+        @extend .iconfont_min, .iconreset_min;
+        content: "\e644";
+      }
+      .tel:before {
+        @extend .iconfont_min, .iconreset_min;
+        content: "\e614";
+      }
+    }
   }
 }
 
