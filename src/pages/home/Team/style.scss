@@ -14,34 +14,38 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 20px;
-      img {
-        width: 1370px;
-        height: 639px;
-      }
-    }
-    .home-team-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding-bottom: 20px;
-      position: relative;
-      top: 120px;
-      .home-title {
-        font-size: 70px;
-        letter-spacing: 6px;
-        font-weight: bold;
-        margin-bottom: 50px;
-        margin-top: 120px;
-      }
-      .home-team-desc {
-        margin-bottom: 42px;
+      .home-team-text {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        & > p {
-          font-size: 20px;
-          margin-bottom: 16px;
+        padding-bottom: 20px;
+        position: relative;
+        top: 120px;
+        & > img {
+          width: 70px;
+          height: 60px;
+          position: relative;
+          left: 620px;
+          bottom: 100px;
+        }
+        .home-title {
+          font-size: 70px;
+          letter-spacing: 6px;
+          font-weight: bold;
+          margin-bottom: 50px;
+          margin-top: 120px;
+        }
+        .home-team-desc {
+          margin-bottom: 42px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & > p {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: rgba(0, 0, 0, 0.85);
+          }
         }
       }
     }
@@ -66,12 +70,13 @@
         align-items: center;
         margin-top: 320px;
         letter-spacing: 3px;
-        & p {
+        & > p {
           margin-bottom: 16px;
           text-align: center;
           font-size: 16px;
+          color: rgba(0, 0, 0, 0.85);
         }
-        p:last-child {
+        & > p:last-child {
           margin-bottom: 40px;
         }
       }
@@ -95,6 +100,7 @@
         & > p {
           margin-bottom: 16px;
           font-size: 16px;
+          color: rgba(0, 0, 0, 0.85);
         }
       }
     }

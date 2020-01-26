@@ -1,12 +1,13 @@
-import React, { Suspense, lazy, useEffect, useState } from 'react';
-import './index.scss';
-import HorizontalScroll from '@src/pages/home/components/HorizontalScroll';
-import { useMedia } from 'react-use';
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import "./index.scss";
+import HorizontalScroll from "@src/pages/home/components/HorizontalScroll";
+import { useMedia } from "react-use";
 
-const Ncuhome = lazy(() => import('./Ncuhome'));
-const Products = lazy(() => import('./Products'));
-const Blog = lazy(() => import('./Blog'));
-const TeamWork= lazy(() => import('./TeamWork'));
+const Ncuhome = lazy(() => import("./Ncuhome"));
+const Products = lazy(() => import("./Products"));
+const Blog = lazy(() => import("./Blog"));
+const Team = lazy(() => import("./Team"));
+const About = lazy(() => import("./About"));
 
 const Pages: React.FC = () => {
   return (
@@ -14,29 +15,28 @@ const Pages: React.FC = () => {
       <Ncuhome />
       <Products />
       <Blog />
-      <TeamWork />
+      <Team />
+      <About />
     </>
-  )
-} 
+  );
+};
 
 const Home = () => {
-
-  const isWide = useMedia('(min-width: 768px)')
+  const isWide = useMedia("(min-width: 768px)");
 
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        {
-          isWide ? (
-            <HorizontalScroll>
-              <Pages />
-            </HorizontalScroll>
-          ) : (<Pages />)
-        }
-        
+        {isWide ? (
+          <HorizontalScroll>
+            <Pages />
+          </HorizontalScroll>
+        ) : (
+          <Pages />
+        )}
       </Suspense>
     </>
-  )
-}
+  );
+};
 
 export default Home;
