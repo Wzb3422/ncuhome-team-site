@@ -15,7 +15,7 @@ const About: React.FC = () => {
             家园欢迎每一位热爱互联网的的出色青年
           </p>
           <BoldButton text="Join us" bgColor="#B7ECB2" />
-          <img src="/assets/img/line2.png" />
+          {/* <img src="/assets/img/line2.png" /> */}
         </div>
       </div>
       <div className="home-about-bottom">

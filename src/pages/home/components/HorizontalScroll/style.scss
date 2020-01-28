@@ -9,6 +9,8 @@
   }
 }
 
-body {
-  height: 5560px;
+@media (min-width: 768px) {
+  body {
+    height: 9999px;
+  }
 }

@@ -177,6 +177,7 @@
       height: 22%;
       width: 100%;
       display: flex;
+      box-sizing: border-box;
       padding-left: 8%;
       flex-flow: column wrap;
       a {
